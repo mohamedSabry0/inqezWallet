@@ -1,4 +1,9 @@
 <div class="group">
+  <div class="group-icon">
+    <%= link_to group.icon %>
+  </div>
   <h2><%= link_to group.name, group %></h2>
-  <p><%= group.icon %></p>
+  <div class="total">
+    <p><%= group.payments.sum(:amount) %></p>
+  </div>
 </div>

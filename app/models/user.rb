@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   has_many :groups, dependent: :destroy
 
-  validates :name, presence: true, length: { maximum: 250, minimum: 4 }
+  validates :name, presence: true, length: { minimum: 4, maximum: 250 }
   validates :email, presence: true
   validates :password, presence: true, length: { minimum: 8 }
   validate :password_complexity
