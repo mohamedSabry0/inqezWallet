@@ -6,6 +6,8 @@ class User < ApplicationRecord
          :confirmable
 
   validates :name, presence: true, length: { maximum: 250, minimum: 4 }
+  validates :email, presence: true
+  validates :password, presence: true, length: { minimum: 8 }
   validate :password_complexity
 
   def password_complexity
