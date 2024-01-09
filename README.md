@@ -129,6 +129,7 @@ rspec --format doc
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Add conditional root path, based on session status.
 - Native icon upload support.
 - Add support for multiple currencies.
 - Add support for multiple languages.
@@ -145,6 +146,7 @@ If you find InqezWallet helpful, kindly show your support by giving it a star or
 
 ## 🙏 Acknowledgments <a name="acknowledgments"></a>
 
+- [Design idea by Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
 - [Microverse](https://www.microverse.org/)
 - [Rails Guides](https://guides.rubyonrails.org/)
 - [Stack Overflow](https://stackoverflow.com/)
