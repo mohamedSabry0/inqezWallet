@@ -1,0 +1,17 @@
+<%= form_with(model: payment) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :categories %>
+    <%= f.text_field :categories %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
