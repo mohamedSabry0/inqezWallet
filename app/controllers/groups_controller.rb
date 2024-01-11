@@ -18,7 +18,7 @@ class GroupsController < ApplicationController
     if @group.save
       redirect_to groups_path, notice: 'Category was successfully created.'
     else
-      render :new, notice: 'Category was not created.'
+      render :new, status: :unprocessable_entity, alert: 'Category was not created.'
     end
   end
 

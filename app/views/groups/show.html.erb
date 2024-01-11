@@ -1,5 +1,6 @@
+<%= link_to '<', groups_path, class:"back-btn" %>
 <div class="total">
-    <p>Total Amount: <%= @group.payments.sum(:amount) %></p>
-  </div>
+  <p>Total Amount: <%= @group.payments.sum(:amount) %></p>
+</div>
 <%= render partial: 'payments/payment', collection: @payments %>
 <%= link_to 'Add a new payment', new_payment_path %>
