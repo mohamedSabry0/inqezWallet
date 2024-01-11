@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :payment_group do
-    groups { nil }
-    payments { nil }
+    group { nil }
+    payment { nil }
   end
 end

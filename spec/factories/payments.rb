@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :payment do
-    name { Faker::Lorem.word }
+    name { Faker::Name.name }
     amount { Faker::Number.decimal(l_digits: 2) }
-    user_id { nil }
+    author_id { nil }
   end
 end

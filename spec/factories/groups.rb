@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :group do
-    name { 'MyString' }
-    icon { 'MyString' }
+    name { Faker::Lorem.sentence(word_count: 2) }
+    icon { 'bill.png' }
   end
 end

@@ -1,4 +1,5 @@
 <%= link_to '<', groups_path, class:"back-btn" %>
+<h1>Payments for <%= @group.name %></h1>
 <div class="total">
   <p>Total Amount: <%= @group.payments.sum(:amount) %></p>
 </div>
