@@ -24,6 +24,7 @@
         </div>
       <% end %>
     </div>
+    <%= render 'layouts/nav' if current_user %>
     <%= yield %>
   </body>
 </html>

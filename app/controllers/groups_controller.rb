@@ -16,9 +16,9 @@ class GroupsController < ApplicationController
     @group = current_user.groups.build(group_params)
 
     if @group.save
-      redirect_to groups_path, notice: 'Group was successfully created.'
+      redirect_to groups_path, notice: 'Category was successfully created.'
     else
-      render :new, notice: 'Group was not created.'
+      render :new, notice: 'Category was not created.'
     end
   end
 

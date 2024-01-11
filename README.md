@@ -147,6 +147,7 @@ If you find InqezWallet helpful, kindly show your support by giving it a star or
 ## 🙏 Acknowledgments <a name="acknowledgments"></a>
 
 - [Design idea by Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
+- [Font used in the design](https://www.marksimonson.com/fonts/view/proxima-nova)
 - [Microverse](https://www.microverse.org/)
 - [Rails Guides](https://guides.rubyonrails.org/)
 - [Stack Overflow](https://stackoverflow.com/)

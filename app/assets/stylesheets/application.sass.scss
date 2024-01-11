@@ -1,2 +1,8 @@
 // Entry point for your Sass build
+body {
+  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 @import 'icon.sass.scss';
+@import 'colors.sass.scss';
+@import 'nav.sass.scss';
