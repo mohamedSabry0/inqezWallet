@@ -9,7 +9,12 @@
   </div>
   <div class="field">
     <%= f.label :categories %>
-    <%= f.text_field :categories %>
+    <% groups.each do |group| %>
+      <div>
+        <%= check_box_tag "payment[group_ids][]", group.id, f.object.group_ids.include?(group.id) %>
+        <%= label_tag "payment_group_ids_#{group.id}", group.name %>
+      </div>
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>

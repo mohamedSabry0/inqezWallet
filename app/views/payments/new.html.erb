@@ -1,2 +1,3 @@
 <h1>Add a new payment</h1>
-<%= render 'form', payment: @payment %>
+<%= render 'shared/errors', object: @payment %>
+<%= render 'form', payment: @payment, groups: @groups %>

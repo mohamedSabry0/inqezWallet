@@ -151,6 +151,8 @@ If you find InqezWallet helpful, kindly show your support by giving it a star or
 - [Rails Guides](https://guides.rubyonrails.org/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [css-bundling-rails](https://github.com/rails/cssbundling-rails)
+- Icons:
+  - <a href="https://www.flaticon.com/free-icons/done" title="done icons">Done icons created by LAFS - Flaticon</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -4,7 +4,8 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @group = current_user.groups.find(params[:id])
+    @group = current_user.groups.includes(:payments).find(params[:id])
+    @payments = @group.payments.order(created_at: :desc)
   end
 
   def new
@@ -15,9 +16,9 @@ class GroupsController < ApplicationController
     @group = current_user.groups.build(group_params)
 
     if @group.save
-      redirect_to groups_path
+      redirect_to groups_path, notice: 'Group was successfully created.'
     else
-      render :new
+      render :new, notice: 'Group was not created.'
     end
   end
 

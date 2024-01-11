@@ -6,10 +6,11 @@ class User < ApplicationRecord
          :confirmable
 
   has_many :groups, dependent: :destroy
+  has_many :payments, foreign_key: :author_id, dependent: :destroy
 
-  validates :name, presence: true, length: { minimum: 4, maximum: 250 }
+  validates :name, presence: true, length: { within: 4..250 }
   validates :email, presence: true
-  validates :password, presence: true, length: { minimum: 8 }
+  validates :password, presence: true, length: { within: 8..128 }
   validate :password_complexity
 
   def password_complexity
