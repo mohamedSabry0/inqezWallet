@@ -1,6 +1,8 @@
 class PaymentsController < ApplicationController
   before_action :set_groups
   def new
+    @initial_group = @groups.find_by(id: params[:def_group])
+
     @payment = current_user.payments.build
   end
 

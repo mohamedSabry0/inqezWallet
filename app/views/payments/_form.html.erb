@@ -11,7 +11,7 @@
     <%= f.label :categories %>
     <% groups.each do |group| %>
       <div>
-        <%= check_box_tag "payment[group_ids][]", group.id, f.object.group_ids.include?(group.id) %>
+        <%= check_box_tag "payment[group_ids][]", group.id, nil, { checked: group.id == initial_group.id } %>
         <%= label_tag "payment_group_ids_#{group.id}", group.name %>
       </div>
     <% end %>

@@ -1,3 +1,4 @@
+<%= link_to '<', group_path(@initial_group), class:"back-btn" %>
 <h1>Add a new payment</h1>
 <%= render 'shared/errors', object: @payment %>
-<%= render 'form', payment: @payment, groups: @groups %>
+<%= render 'form', payment: @payment, groups: @groups, initial_group: @initial_group %>
