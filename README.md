@@ -125,7 +125,7 @@ rspec --format doc
 
 - GitHub: [@mohamedSabry0](https://github.com/mohamedSabry0)
 - Twitter: [@mohsmh0](https://twitter.com/mohsmh0)
-- LinkedIn: [Mohamed Sabry on LinkedIn](https://www.linkedin.com/in/mohamed-sabry0/)
+- LinkedIn: [in/mohamed-sabry0](https://www.linkedin.com/in/mohamed-sabry0/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
