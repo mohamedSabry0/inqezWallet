@@ -1,11 +1,11 @@
 <%= form_with(model: payment) do |f| %>
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, required: true %>
   </div>
   <div class="field">
     <%= f.label :amount %>
-    <%= f.number_field :amount %>
+    <%= f.number_field :amount, required: true %>
   </div>
   <div class="field">
     <%= f.label :categories %>
@@ -17,6 +17,6 @@
     <% end %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save' %>
   </div>
 <% end %>

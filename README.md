@@ -22,6 +22,7 @@
     - [Deployment](#deployment)
   - [👤 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
+  - [Features in progress working on ](#features-in-progress-working-on-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show Your Support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -61,11 +62,10 @@ InqezWallet is a budget tracking app designed to assist users in managing their 
 
 ### Key Features <a name="key-features"></a>
 
-- Track expenses and income.
-- Set and monitor budget goals.
-- View detailed financial reports.
+- Track expenses.
 - Categorize transactions for better insights.
 - User-friendly interface for easy navigation.
+- Server-side validations for data integrity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,10 +129,22 @@ rspec --format doc
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Set and monitor budget goals.
+- View detailed financial reports.
+- Track income.
+- Add support for reports sharing.
+- Add input client side validations for UX.
 - Add conditional root path, based on session status.
 - Native icon upload support.
 - Add support for multiple currencies.
 - Add support for multiple languages.
+
+## Features in progress working on <a name="todos"></a>
+
+- [ ] Improving and refactoring tests for more coverage and expressiveness.
+- [ ] Adding some UX improvements: transitions and/or animations, etc.
+- [ ] Implementing a decent desktop design for the webapp.
+- [ ] Implementing the left side menu to improve the navigability of the app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,6 +164,7 @@ If you find InqezWallet helpful, kindly show your support by giving it a star or
 - [Rails Guides](https://guides.rubyonrails.org/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [css-bundling-rails](https://github.com/rails/cssbundling-rails)
+- [Testing HTML form validation](https://stackoverflow.com/a/48206413)
 - Icons:
   - <a href="https://www.flaticon.com/free-icons/done" title="done icons">Done icons created by LAFS - Flaticon</a>
 

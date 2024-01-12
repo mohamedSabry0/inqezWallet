@@ -1,13 +1,13 @@
 <%= form_with(model: group) do |f| %>
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, required: true %>
   </div>
   <div class="field">
     <%= f.label :icon %>
-    <%= f.text_field :icon %>
+    <%= f.text_field :icon, required: true %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save' %>
   </div>
 <% end %>
