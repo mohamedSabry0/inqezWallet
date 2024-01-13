@@ -1,10 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'registration', type: :feature, js: true do
-  # The user should be able to register in the app with full name, email and password (all mandatory).
-  # The user can log into the app using email and password.
-  # If the user is not logged in, they can't access pages that require the user to be logged in (all the pages described below).
-
   describe 'registration' do
     before do
       visit root_path
@@ -12,7 +8,6 @@ RSpec.describe 'registration', type: :feature, js: true do
     end
 
     it 'should register a new user with valid params' do
-      # fill with faker generated data
       valid_password = Faker::Internet.password(min_length: 8, max_length: 20, mix_case: true, special_characters: true)
       fill_in 'Name', with: Faker::Name.name
       fill_in 'Email', with: Faker::Internet.email
