@@ -1,9 +1,23 @@
 // Entry point for your Sass build
+@import 'colors.sass.scss';
+
 body {
-  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $darkest_text;
+  background-color: $main_bg;
+  margin: 0;
+  padding: 0;
+  // reset box-sizing
+  box-sizing: border-box;
+  * {
+    box-sizing: inherit;
+  }
 }
 
-@import 'icon.sass.scss';
-@import 'colors.sass.scss';
-@import 'nav.sass.scss';
+@import 'header.sass.scss';
 @import 'layout.sass.scss';
+@import 'buttons.sass.scss';
+@import 'forms.sass.scss';
+// @import 'splash.sass.scss';

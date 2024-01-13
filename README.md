@@ -3,6 +3,8 @@
 <div align="center">
 
   <h3><b>InqezWallet</b></h3>
+  <!-- screenshot with device mock -->
+  <img src="./splash_mock.png" alt="InqezWallet screenshot" width="400" height="auto">
 
 </div>
 
@@ -19,7 +21,7 @@
     - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
-    - [Deployment](#deployment)
+    - [Live Demo](#live-demo)
   - [👤 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [Features in progress working on ](#features-in-progress-working-on-)
@@ -115,9 +117,7 @@ Run tests using:
 rspec --format doc
 ```
 
-### Deployment
-
-<!-- Add deployment instructions -->
+### Live Demo
 
 ## 👤 Author <a name="author"></a>
 
@@ -159,7 +159,7 @@ If you find InqezWallet helpful, kindly show your support by giving it a star or
 ## 🙏 Acknowledgments <a name="acknowledgments"></a>
 
 - [Design idea by Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
-- [Font used in the design](https://www.marksimonson.com/fonts/view/proxima-nova)
+- Device Mockup created from [iPhone mockups](https://deviceframes.com/templates/iphone-13)
 - [Microverse](https://www.microverse.org/)
 - [Rails Guides](https://guides.rubyonrails.org/)
 - [Stack Overflow](https://stackoverflow.com/)
