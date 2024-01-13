@@ -90,6 +90,7 @@ Clone this repository to your desired location:
 
 ```
 git clone https://github.com/mohamedSabry0/inqezWallet.git
+cd inqezWallet
 ```
 
 ### Install
