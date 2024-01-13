@@ -35,19 +35,19 @@ RSpec.describe 'Group show page', type: :feature do
 
     it 'user should see the list of payments ordered by the most recent' do
       payments.reverse.each_with_index do |payment, index|
-        expect(page).to have_selector(".payment:nth-child(n + #{index}) p.payment-title", text: payment.name)
+        expect(page).to have_selector(".card:nth-child(n + #{index}) p.name", text: payment.name)
       end
     end
 
     it 'user should see the amount of each payment' do
       payments.reverse.each_with_index do |payment, index|
-        expect(page).to have_selector(".payment:nth-child(n + #{index}) p.payment-amount", text: payment.amount)
+        expect(page).to have_selector(".card:nth-child(n + #{index}) p.amount", text: payment.amount)
       end
     end
 
     it 'user should see the date of each payment' do
       payments.reverse.each_with_index do |payment, index|
-        expect(page).to have_selector(".payment:nth-child(n + #{index}) p.payment-date",
+        expect(page).to have_selector(".card:nth-child(n + #{index}) p.date",
                                       text: payment.created_at.strftime('%d %b %Y'))
       end
     end

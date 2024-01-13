@@ -11,7 +11,7 @@
     <%= f.label :categories %>
     <% groups.each do |group| %>
       <div>
-        <%= f.label "group_ids_#{group.id}" do %>
+        <%= f.label "group_ids_#{group.id}", class:"checkbox-label" do %>
           <%= f.check_box :group_ids, { multiple: true, checked: group.id == initial_group.id }, group.id, nil %>
           <%= group.name %>
         <% end %>
