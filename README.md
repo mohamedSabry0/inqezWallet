@@ -172,6 +172,6 @@ If you find InqezWallet helpful, kindly show your support by giving it a star or
 
 ## 📝 License <a name="license"></a>
 
-This project is licensed under the [MIT License](link-to-license).
+This project is licensed under the [MIT License](./LICENSE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
