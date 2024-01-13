@@ -3,7 +3,6 @@
 <div align="center">
 
   <h3><b>InqezWallet</b></h3>
-  <!-- screenshot with device mock -->
   <img src="./splash_mock.png" alt="InqezWallet screenshot" width="400" height="auto">
 
 </div>
@@ -12,6 +11,7 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 About InqezWallet ](#-about-inqezwallet-)
+- [Live Demo](#live-demo)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -21,7 +21,6 @@
     - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
-    - [Live Demo](#live-demo)
   - [👤 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [Features in progress working on ](#features-in-progress-working-on-)
@@ -30,11 +29,13 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-<!-- PROJECT DESCRIPTION -->
-
 # 📖 About InqezWallet <a name="about-inqezwallet"></a>
 
-InqezWallet is a budget tracking app designed to assist users in managing their finances efficiently. The app enables users to track their expenses, income, and budget goals effectively.
+InqezWallet is a budget tracking app designed to assist users in managing their finances efficiently. The app enables users to track their expenses, and budget goals effectively.
+
+# Live Demo
+
+[Demo](https://inqez-wallet.onrender.com)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -117,8 +118,6 @@ Run tests using:
 rspec --format doc
 ```
 
-### Live Demo
-
 ## 👤 Author <a name="author"></a>
 
 👤 **Mohamed Sabry**
@@ -129,6 +128,9 @@ rspec --format doc
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] Adding some UX improvements: transitions and/or animations, etc.
+- [ ] Implementing a decent desktop design for the webapp.
+- [ ] Implementing the left side menu to improve the navigability of the app.
 - Set and monitor budget goals.
 - View detailed financial reports.
 - Track income.
@@ -142,9 +144,6 @@ rspec --format doc
 ## Features in progress working on <a name="todos"></a>
 
 - [ ] Improving and refactoring tests for more coverage and expressiveness.
-- [ ] Adding some UX improvements: transitions and/or animations, etc.
-- [ ] Implementing a decent desktop design for the webapp.
-- [ ] Implementing the left side menu to improve the navigability of the app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
