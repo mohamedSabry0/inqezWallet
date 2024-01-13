@@ -1,3 +1,15 @@
+.header {
+  background-color: $main_color;
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    margin: 0;
+  }
+}
+
 nav {
   ul {
     list-style: none;

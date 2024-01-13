@@ -1,11 +1,11 @@
 <%= form_with(model: payment, url: payments_path(def_group: initial_group)) do |f| %>
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name, required: true %>
+    <%= f.text_field :name, required: true, placeholder: 'Enter name' %>
   </div>
   <div class="field">
     <%= f.label :amount %>
-    <%= f.number_field :amount, required: true, step: "0.01" %>
+    <%= f.number_field :amount, required: true, step: "0.01", placeholder: 'Enter amount' %>
   </div>
   <div class="field">
     <%= f.label :categories %>
