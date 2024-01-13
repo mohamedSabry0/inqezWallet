@@ -39,4 +39,4 @@ en:
             amount:
               greater_than: 'must be greater than 0'
             groups:
-              blank: 'Categories: must be include one at least.'
+              blank: 'Categories: must include one at least.'

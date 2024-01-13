@@ -1,18 +1,20 @@
-<%= form_with(model: payment) do |f| %>
+<%= form_with(model: payment, url: payments_path(def_group: initial_group)) do |f| %>
   <div class="field">
     <%= f.label :name %>
     <%= f.text_field :name, required: true %>
   </div>
   <div class="field">
     <%= f.label :amount %>
-    <%= f.number_field :amount, required: true %>
+    <%= f.number_field :amount, required: true, step: "0.01" %>
   </div>
   <div class="field">
     <%= f.label :categories %>
     <% groups.each do |group| %>
       <div>
-        <%= check_box_tag "payment[group_ids][]", group.id, nil, { checked: group.id == initial_group.id } %>
-        <%= label_tag "payment_group_ids_#{group.id}", group.name %>
+        <%= f.label "group_ids_#{group.id}" do %>
+          <%= f.check_box :group_ids, { multiple: true, checked: group.id == initial_group.id }, group.id, nil %>
+          <%= group.name %>
+        <% end %>
       </div>
     <% end %>
   </div>
