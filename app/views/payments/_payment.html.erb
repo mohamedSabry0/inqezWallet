@@ -1,5 +1,5 @@
-<div class="payment">
-  <p class="payment-title"><%= payment.name %></p>
-  <p class="payment-amount"><%= number_to_currency(payment.amount) %></p>
-  <p class="payment-date"><%= payment.created_at.strftime('%d %b %Y') %></p>
+<div class="card">
+  <p class="title"><%= payment.name %></p>
+  <p class="amount"><%= number_to_currency(payment.amount) %></p>
+  <p class="date"><%= payment.created_at.strftime('%d %b %Y') %></p>
 </div>

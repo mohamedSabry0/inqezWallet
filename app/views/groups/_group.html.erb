@@ -1,4 +1,4 @@
-<div class="group">
+<div class="group-card">
   <div class="group-icon">
     <% if group.icon.present? && group.icon =~ URI::DEFAULT_PARSER.make_regexp %>
       <%= image_tag group.icon %>
@@ -6,8 +6,10 @@
       <%= image_tag asset_path('bill.png') %>
     <% end %>
   </div>
-  <h2><%= link_to group.name, group %></h2>
-  <div class="total">
+  <div class="group-name">
+    <%= link_to group.name, group %>
+  </div>
+  <div class="amount">
     <p><%= group.payments.sum(:amount) %></p>
   </div>
 </div>

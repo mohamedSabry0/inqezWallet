@@ -1,12 +1,20 @@
 .header {
   background-color: $main_color;
-  color: white;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
 
+  a {
+    color: white;
+  }
+
   h2 {
     margin: 0;
+  }
+
+  .button_to {
+    margin: 0;
+    padding: 0;
   }
 }
 

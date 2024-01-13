@@ -1,4 +1,6 @@
-<%= link_to '<', groups_path, class:"back-btn" %>
+<%= content_for :header do %>
+  <%= link_to '<', groups_path, class:"back-btn" %>
+<% end %>
 <h1>New Category</h1>
 <%= render 'shared/errors', object: @group %>
 <%= render 'form', group: @group %>

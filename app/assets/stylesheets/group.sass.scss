@@ -1,0 +1,35 @@
+.card {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .group-icon {
+    img {
+      width: 2rem;
+    }
+  }
+
+  .name {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .amount {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: right;
+  }
+}
