@@ -1,0 +1,35 @@
+.sidebar-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 0;
+  height: 100%;
+  background-color: $main_color;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.5s;
+}
+
+.toggle-button {
+  font-size: 20px;
+  cursor: pointer;
+}

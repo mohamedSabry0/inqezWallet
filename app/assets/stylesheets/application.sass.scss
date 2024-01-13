@@ -19,6 +19,7 @@ body {
   * {
     box-sizing: inherit;
   }
+  height: calc(100vh + 5rem);
 }
 
 @import 'layout.sass.scss';
@@ -26,3 +27,4 @@ body {
 @import 'buttons.sass.scss';
 @import 'forms.sass.scss';
 @import 'group.sass.scss';
+@import 'footer.sass.scss';

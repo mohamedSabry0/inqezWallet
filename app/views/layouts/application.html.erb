@@ -14,9 +14,9 @@
     <% if controller_name != 'pages' %>
       <header class="header">
         <%= yield :header %>
-        <%= render 'layouts/nav' if current_user %>
       </header>
     <% end %>
+
     <div class="flash-container">
       <% if flash[:notice] %>
         <div class="alert alert-success" role="alert">
@@ -30,6 +30,11 @@
         </div>
       <% end %>
     </div>
+
     <%= yield %>
+
+    <footer class="footer">
+      <%= yield :footer %>
+    </footer>
   </body>
 </html>

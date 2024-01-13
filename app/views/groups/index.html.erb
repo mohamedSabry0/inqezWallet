@@ -1,6 +1,24 @@
-<h1>Categories List</h1>
-<ul>
-  <%= render @groups %>
-</ul>
+<div class="sidebar-container">
+  <%= content_for :header do %>
+    <button type="button" class="toggle-btn btn" id="toggleButton">
+      <!--
+      burger icon
+      <span class="burger-icon"></span>
+      -->
+      #
+    </button>
+    <h2>Categories List</h2>
+  <% end %>
+  <div class="sidebar" id="sidebar">
+    <%= render 'layouts/nav' if current_user %>
+  </div>
+  <div class="main-content">
+    <ul>
+      <%= render @groups %>
+    </ul>
 
-<%= link_to 'Add a new category', new_group_path, class:"btn" %>
+    <%= content_for :footer do %>
+      <%= link_to 'Add a new category', new_group_path, class:"btn btn-secondary" %>
+    <% end %>
+  </div>
+</div>

@@ -1,9 +1,14 @@
 <%= content_for :header do %>
   <%= link_to '<', groups_path, class:"back-btn" %>
+  <h2>Payments for <%= @group.name %></h2>
 <% end %>
-<h1>Payments for <%= @group.name %></h1>
 <div class="total">
   <p>Total Amount: <%= number_to_currency(@group.payments.sum(:amount)) %></p>
 </div>
-<%= render partial: 'payments/payment', collection: @payments %>
-<%= link_to 'Add a new payment', new_payment_path(def_group: @group.id), class:"btn" %>
+<ul>
+  <%= render partial: 'payments/payment', collection: @payments %>
+</ul>
+
+<%= content_for :footer do %>
+  <%= link_to 'Add a new payment', new_payment_path(def_group: @group.id), class:"btn btn-secondary" %>
+<% end %>
