@@ -41,3 +41,5 @@
 /.yarn
 
 /config/remember.txt
+
+coverage/
