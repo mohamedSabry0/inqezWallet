@@ -36,6 +36,7 @@ InqezWallet is a budget tracking app designed to assist users in managing their 
 # Live Demo
 
 [Demo](https://inqez-wallet.onrender.com)
+[video](https://www.loom.com/share/fa8d0563178c4b5fb19fc4849d3670bd?sid=657c532b-01e2-4f63-8fa7-58a891c2f6e8)
 
 ## 🛠 Built With <a name="built-with"></a>
 
