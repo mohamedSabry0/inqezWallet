@@ -21,6 +21,13 @@
   }
 }
 
-.btn-secondary {
+.btn .burger-icon {
+  width: 1.5rem;
+  margin-left: 4px;
+}
+
+.btn-secondary,
+.form .btn-secondary {
   background-color: $secondary_color;
+  font-size: 1.3rem;
 }

@@ -1,4 +1,4 @@
-<%= form_with(model: payment, url: payments_path(def_group: initial_group)) do |f| %>
+<%= form_with(model: payment, url: payments_path(def_group: initial_group), class:"form") do |f| %>
   <div class="field">
     <%= f.label :name %>
     <%= f.text_field :name, required: true, placeholder: 'Enter name' %>
@@ -7,7 +7,7 @@
     <%= f.label :amount %>
     <%= f.number_field :amount, required: true, step: "0.01", placeholder: 'Enter amount' %>
   </div>
-  <div class="field">
+  <div class="checkboxes-container">
     <%= f.label :categories %>
     <% groups.each do |group| %>
       <div>
@@ -18,7 +18,9 @@
       </div>
     <% end %>
   </div>
-  <div class="actions">
-    <%= f.submit 'Save' %>
+  <div class="footer">
+    <div class="actions">
+      <%= f.submit 'Save', class:"btn btn-secondary" %>
+    </div>
   </div>
 <% end %>

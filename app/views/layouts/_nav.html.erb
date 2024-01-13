@@ -1,7 +1,7 @@
-<nav>
+<nav class="nav">
   <ul>
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Profile', edit_user_registration_path %></li>
-    <li><%= button_to 'Log out', destroy_user_session_path, method: :delete %></li>
+    <li><%= button_to 'Log out', destroy_user_session_path, method: :delete, class:"btn" %></li>
   </ul>
 </nav>

@@ -16,7 +16,6 @@ RSpec.describe 'Payments new', type: :feature, js: true do
     it 'should create a new payment with valid params' do
       fill_in 'Name', with: Faker::Name.name
       fill_in 'Amount', with: Faker::Number.decimal(l_digits: 2)
-      check group.name
       click_on 'Save'
 
       expect(page).to have_content('Payment was successfully created.')
@@ -25,7 +24,6 @@ RSpec.describe 'Payments new', type: :feature, js: true do
     it 'should not create a new payment with invalid name' do
       fill_in 'Name', with: ''
       fill_in 'Amount', with: Faker::Number.decimal(l_digits: 2)
-      check group.name
       click_on 'Save'
 
       message = page.find('#payment_name').native.attribute('validationMessage')
@@ -35,7 +33,6 @@ RSpec.describe 'Payments new', type: :feature, js: true do
     it 'should not create a new payment with invalid amount' do
       fill_in 'Name', with: Faker::Name.name
       fill_in 'Amount', with: ''
-      check group.name
       click_on 'Save'
 
       message = page.find('#payment_amount').native.attribute('validationMessage')
@@ -45,7 +42,8 @@ RSpec.describe 'Payments new', type: :feature, js: true do
     it 'should not create a new payment without selecting a group' do
       fill_in 'Name', with: Faker::Name.name
       fill_in 'Amount', with: Faker::Number.decimal(l_digits: 2)
-      uncheck group.name
+      find('.checkbox-label').click
+
       click_on 'Save'
 
       expect(page).to have_content('Categories: must include one at least.')
@@ -54,7 +52,6 @@ RSpec.describe 'Payments new', type: :feature, js: true do
     it 'should navigate to the payments page for that group' do
       fill_in 'Name', with: Faker::Name.name
       fill_in 'Amount', with: Faker::Number.decimal(l_digits: 2)
-      check group.name
       click_on 'Save'
 
       expect(page).to have_content("Payments for #{group.name}")

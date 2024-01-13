@@ -30,24 +30,26 @@ RSpec.describe 'Group show page', type: :feature do
 
   describe 'page content' do
     it 'user should see the total amount for the category' do
-      expect(page).to have_content("Total Amount: $#{group.payments.sum(:amount)}")
+      expect(page).to have_content("Total Amount:\n$#{group.payments.sum(:amount)}")
     end
 
     it 'user should see the list of payments ordered by the most recent' do
       payments.reverse.each_with_index do |payment, index|
-        expect(page).to have_selector(".card:nth-child(n + #{index}) p.name", text: payment.name)
+        expect(page).to have_selector(".card:nth-child(n + #{index}) .card-body .main-info div.name p",
+                                      text: payment.name)
       end
     end
 
     it 'user should see the amount of each payment' do
       payments.reverse.each_with_index do |payment, index|
-        expect(page).to have_selector(".card:nth-child(n + #{index}) p.amount", text: payment.amount)
+        expect(page).to have_selector(".card:nth-child(n + #{index}) .card-body .main-info div.amount p",
+                                      text: payment.amount)
       end
     end
 
     it 'user should see the date of each payment' do
       payments.reverse.each_with_index do |payment, index|
-        expect(page).to have_selector(".card:nth-child(n + #{index}) p.date",
+        expect(page).to have_selector(".card:nth-child(n + #{index}) .card-body div.date p",
                                       text: payment.created_at.strftime('%d %b %Y'))
       end
     end

@@ -1,19 +1,24 @@
 <div class="card">
-  <div class="group-icon">
-    <% if group.icon.present? && group.icon =~ URI::DEFAULT_PARSER.make_regexp %>
-      <%= image_tag group.icon %>
-    <% else %>
-      <%= image_tag asset_path('bill.png') %>
-    <% end %>
-  </div>
-  <div class="name">
-    <%= link_to group.name, group %>
-  </div>
-  <div class="amount">
-    <p><%= group.payments.sum(:amount) %></p>
-  </div>
-
-  <div class="date">
-    <p><%= group.created_at.strftime('%d %b %Y') %></p>
-  </div>
+  <%= link_to group do %>
+    <div class="group-icon">
+      <% if group.icon.present? && group.icon =~ URI::DEFAULT_PARSER.make_regexp %>
+        <%= image_tag group.icon %>
+      <% else %>
+        <%= image_tag asset_path('bill.png') %>
+      <% end %>
+    </div>
+    <div class="card-body">
+      <div class="main-info">
+        <div class="name">
+          <%= group.name %>
+        </div>
+        <div class="amount">
+          <p><%= group.payments.sum(:amount) %></p>
+        </div>
+      </div>
+      <div class="date">
+        <p><%= group.created_at.strftime('%d %b %Y') %></p>
+      </div>
+    </div>
+  <% end %>
 </div>
