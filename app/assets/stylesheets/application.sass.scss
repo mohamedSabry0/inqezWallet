@@ -1,0 +1,72 @@
+// Entry point for your Sass build
+@import 'colors.sass.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $darkest_text;
+  background-color: $main_bg;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+    color: $light_text;
+  }
+
+  * {
+    box-sizing: inherit;
+  }
+
+  height: 100vh;
+}
+
+@import 'layout.sass.scss';
+@import 'group.sass.scss';
+@import 'header.sass.scss';
+@import 'sidebar.sass.scss';
+@import 'forms.sass.scss';
+@import 'buttons.sass.scss';
+@import 'footer.sass.scss';
+
+.total {
+  font-size: 1rem;
+  text-align: left;
+  background-color: #fff;
+  padding: 0.7rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+
+    &:first-of-type {
+      color: $light_text;
+    }
+  }
+}
+
+.sidebar button {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.form button:hover {
+  background-color: darken($main_color, 10%);
+}
+
+.form button:focus {
+  outline: none;
+  border-color: $main_color;
+}

@@ -11,6 +11,26 @@
   </head>
 
   <body>
+    <% if controller_name != 'pages' %>
+      <header class="header">
+        <%= yield :header %>
+      </header>
+    <% end %>
+
+    <div class="flash-container">
+      <% if flash[:notice] %>
+        <div class="alert alert-success" role="alert">
+          <p class="notice"><%= notice %></p>
+        </div>
+      <% end %>
+
+      <% if flash[:alert] %>
+        <div class="alert alert-warning" role="alert">
+          <p class="alert"><%= alert %></p>
+        </div>
+      <% end %>
+    </div>
+
     <%= yield %>
   </body>
 </html>

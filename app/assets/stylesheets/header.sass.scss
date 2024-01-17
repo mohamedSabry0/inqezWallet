@@ -1,0 +1,50 @@
+.header {
+  background-color: $main_color;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+
+  a {
+    color: white;
+  }
+
+  h2 {
+    margin: 0;
+    color: white;
+  }
+}
+
+.nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.flash-container {
+  width: 100%;
+  color: $darkest_text;
+  text-align: center;
+  margin: 0;
+
+  .alert {
+    padding: 0.5rem;
+    border-radius: 6px;
+
+    &.alert-success {
+      background-color: $success_color;
+    }
+
+    &.alert-warning {
+      background-color: $warning_color;
+    }
+  }
+}
+
+.header-btn.btn {
+  width: 32px;
+  padding: 0;
+}

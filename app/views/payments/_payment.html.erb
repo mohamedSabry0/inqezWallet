@@ -1,0 +1,15 @@
+<div class="card payment">
+  <div class="card-body">
+    <div class="main-info">
+      <div class="name">
+        <p><%= payment.name %></p>
+      </div>
+      <div class="amount">
+        <p><%= number_to_currency(payment.amount) %></p>
+      </div>
+    </div>
+    <div class="date">
+      <p><%= payment.created_at.strftime('%d %b %Y') %></p>
+    </div>
+  </div>
+</div>

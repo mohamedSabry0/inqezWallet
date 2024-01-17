@@ -1,0 +1,6 @@
+<%= content_for :header do %>
+  <h2>Add a new payment</h2>
+  <%= link_to '<', group_path(@initial_group), class:"back-btn btn header-btn" %>
+<% end %>
+<%= render 'shared/errors', object: @payment %>
+<%= render 'form', payment: @payment, groups: @groups, initial_group: @initial_group %>

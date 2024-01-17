@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: $main_color;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  &.login {
+    text-transform: uppercase;
+  }
+
+  &.signup {
+    text-transform: uppercase;
+    background-color: $main_bg;
+    color: $light_text;
+  }
+}
+
+.btn .burger-icon {
+  width: 1.5rem;
+  margin-left: 4px;
+}
+
+.btn-secondary,
+.form .btn-secondary {
+  background-color: $secondary_color;
+  font-size: 1.3rem;
+}

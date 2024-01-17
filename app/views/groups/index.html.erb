@@ -1,0 +1,22 @@
+<div class="sidebar-container">
+  <%= content_for :header do %>
+    <button type="button" class="toggle-btn btn header-btn" id="toggleButton">
+      <span class="burger-icon">
+        <%= image_tag asset_path('icons8-menu.svg')%>
+      </span>
+    </button>
+    <h2>Categories List</h2>
+  <% end %>
+  <div class="sidebar" id="sidebar">
+    <%= render 'layouts/nav' if current_user %>
+  </div>
+  <div class="main-content" id="mainContent">
+    <ul>
+      <%= render @groups %>
+    </ul>
+
+    <div class="footer">
+      <%= link_to 'Add a new category', new_group_path, class:"btn btn-secondary" %>
+    </div>
+  </div>
+</div>

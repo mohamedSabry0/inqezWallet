@@ -28,4 +28,15 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      payment:
+        groups: ''
+    errors:
+      models:
+        payment:
+          attributes:
+            amount:
+              greater_than: 'must be greater than 0'
+            groups:
+              blank: 'Categories: must include one at least.'

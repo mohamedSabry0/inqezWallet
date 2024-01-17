@@ -1,0 +1,68 @@
+.card {
+  margin: 1rem 0;
+  padding: 1rem 0 1rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
+  color: $light_text;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  &.payment {
+    cursor: default;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .group-icon {
+    img {
+      width: 2rem;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .main-info {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $input_border;
+      align-items: center;
+      padding-left: 0.4rem;
+    }
+  }
+
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .amount {
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 0.4rem;
+    color: $darkest_text;
+  }
+
+  .date {
+    font-size: 0.8rem;
+    padding-left: 0.4rem;
+    text-align: left;
+  }
+}
